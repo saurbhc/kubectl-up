@@ -16,9 +16,9 @@ Install Docker Desktop
 
 Install your local Kubernetes provider.
 
-1. [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
+- [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
-2. Minikube
+- Minikube
 
     - via brew
         ```bash
@@ -33,16 +33,22 @@ Install your local Kubernetes provider.
 Usage:
 
 ```bash
-kubectl up docker-desktop-and-minikube ;# default
+kubectl up
 ```
 
-```bash
-kubectl up docker-desktop
-```
+- Alternatives:
 
-```bash
-kubectl up minikube
-```
+    ```bash
+    kubectl up docker-desktop-and-minikube ;# default
+    ```
+
+    ```bash
+    kubectl up docker-desktop
+    ```
+
+    ```bash
+    kubectl up minikube
+    ```
 
 ```bash
 kubectl down
