@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eux
+
+startDockerDesktop() {
+  docker ps || open --background --hide -a Docker
+  until docker ps ; do sleep 5 ; done
+}
+
+startMiniKube() {
+    minikube start --driver=docker --memory 8G --cpus 4 --disk-size=32GB
+
+    sleep 3s
+}
+
+case ${1:-docker-desktop} in
+  d|dd|docker-desktop)
+    startDockerDesktop
+    ;;
+  m|minikube)
+    startMiniKube
+    ;;
+  *)
+  echo "up $2 is not understood: [dd|k3s|minikube]" > /dev/stderr
+esac
+
+
+until kubectl cluster-info ; do sleep 10 ; done
