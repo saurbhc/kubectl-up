@@ -33,23 +33,23 @@ Install your local Kubernetes provider.
 Usage:
 
 ```bash
-kubectl up
+kubectl-up
 ```
 
 - Alternatives:
 
     ```bash
-    kubectl up docker-desktop-and-minikube ;# default
+    kubectl-up docker-desktop-and-minikube ;# default
     ```
 
     ```bash
-    kubectl up docker-desktop
+    kubectl-up docker-desktop
     ```
 
     ```bash
-    kubectl up minikube
+    kubectl-up minikube
     ```
 
 ```bash
-kubectl down
+kubectl-down
 ```
