@@ -12,11 +12,15 @@ startMiniKube() {
     sleep 3s
 }
 
-case ${1:-docker-desktop} in
+case ${1:-docker-desktop-and-minikube} in
   d|dd|docker-desktop)
     startDockerDesktop
     ;;
   m|minikube)
+    startMiniKube
+    ;;
+  dm|ddm|docker-desktop-and-minikube)
+    startDockerDesktop
     startMiniKube
     ;;
   *)
