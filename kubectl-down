@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eux
+
+command -v minikube && minikube stop
+command -v k3d && k3d cluster stop --all
+killall Docker
