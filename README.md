@@ -33,7 +33,11 @@ Install your local Kubernetes provider.
 Usage:
 
 ```bash
-kubectl up docker-desktop ;# default
+kubectl up docker-desktop-and-minikube ;# default
+```
+
+```bash
+kubectl up docker-desktop
 ```
 
 ```bash
