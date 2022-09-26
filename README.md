@@ -3,13 +3,13 @@ Start and stop local Kubernetes clusters.
 * Docker Desktop
 * MiniKube
 
-`kubectl up` will start and initialize a local cluster. `kubectl down` will stop local cluster.
+`kubectl-up` will start and initialize a local cluster. `kubectl-down` will stop local cluster.
 
 Installation:
 
 ```bash
-git clone https://github.com/saurbhc/kubectl-up.git -o ~/kubectl-up
-export PATH=~/kubectl-up:$PATH ;# add to your ~/.bashrc
+git clone https://github.com/saurbhc/kubectl-up.git ~/kubectl-up
+export PATH=~/kubectl-up:$PATH ;# add to your ~/.bash_profile
 ```
 
 Install Docker Desktop
